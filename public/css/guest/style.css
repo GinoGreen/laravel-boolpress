@@ -1,0 +1,110 @@
+.container {
+  width: 70%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #23272E;
+  font-family: monospace;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.btn {
+  margin-right: 5px;
+  border-radius: 6px;
+  border: none;
+  padding: 6px;
+  background-color: #fff;
+  color: #23272E;
+  font-family: monospace;
+  font-size: 1.4em;
+  transition: all 0.3s;
+}
+
+.btn.active {
+  cursor: pointer;
+}
+
+.btn.active:hover {
+  color: #fff;
+  background-color: #23272E;
+  outline: 2px solid #fff;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: darkcyan;
+  color: #23272E;
+  margin-right: 7px;
+}
+
+header {
+  background-color: white;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin: 0 20px;
+  padding: 20px 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #23272E;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  text-decoration: underline;
+}
+
+.blog {
+  padding: 30px 0 100px;
+}
+
+.blog article {
+  padding: 0 20px 40px 0;
+}
+
+.blog article h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blog article h2 a:hover {
+  text-decoration: underline;
+}
+
+.blog article .date {
+  font-size: 0.6em;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+footer h4 {
+  text-align: center;
+  padding: 20px 0;
+  color: #23272E;
+}
+

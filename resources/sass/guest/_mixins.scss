@@ -1,0 +1,22 @@
+
+@mixin center($type: 'both') {
+   display: flex;
+   @if $type == 'justify' { justify-content: center; }
+   @else if $type == 'align' { align-items: center; }
+   @else if $type == 'both' {
+      justify-content: center;
+      align-items: center;
+   }
+
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-a {
+   text-decoration: none;
+   color: #23272E;
+}
