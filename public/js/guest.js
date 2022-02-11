@@ -2165,9 +2165,7 @@ __webpack_require__.r(__webpack_exports__);
     this.getPost();
   },
   methods: {
-    getPost: function getPost() {
-      console.log(this.$route.params.slug);
-    }
+    getPost: function getPost() {}
   }
 });
 
