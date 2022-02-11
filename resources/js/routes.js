@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import Posts from './components/Posts';
 import About from './components/pages/About';
 import Contacts from './components/pages/Contacts';
+import PostDetail from './components/pages/PostDetail';
 
 Vue.use(VueRouter);
 
@@ -31,6 +32,11 @@ const router = new VueRouter({
          path: '/contatti',
          name: 'contacts',
          component: Contacts,
+      },
+      {
+         path: '/detail/:slug',
+         name: 'detail',
+         component: PostDetail,
       },
    ],
 });

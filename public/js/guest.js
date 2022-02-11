@@ -2129,6 +2129,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/PostDetail.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/PostDetail.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\resources\\js\\components\\pages\\PostDetail.vue: Unexpected token, expected \"{\" (27:3)\n\n\u001b[0m \u001b[90m 25 |\u001b[39m    methods\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m       getPost()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m    }\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m\u001b[0m\n    at Parser._raise (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:506:17)\n    at Parser.raiseWithData (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:499:17)\n    at Parser.raise (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:460:17)\n    at Parser.unexpected (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:3699:16)\n    at Parser.expect (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:3683:28)\n    at Parser.parseBlock (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14536:10)\n    at Parser.parseFunctionBody (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13269:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13253:10)\n    at Parser.parseMethod (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13203:10)\n    at Parser.parseObjectMethod (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13088:19)\n    at Parser.parseObjPropValue (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13129:23)\n    at Parser.parsePropertyDefinition (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13046:10)\n    at Parser.parseObjectLike (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12937:21)\n    at Parser.parseExprAtom (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12343:23)\n    at Parser.parseExprSubscripts (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11999:23)\n    at Parser.parseUpdate (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11979:21)\n    at Parser.parseMaybeUnary (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11954:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11751:61)\n    at Parser.parseExprOps (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11758:23)\n    at Parser.parseMaybeConditional (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11728:23)\n    at Parser.parseMaybeAssign (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11688:21)\n    at C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11646:39\n    at Parser.allowInAnd (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13652:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11646:17)\n    at Parser.parseObjectProperty (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13096:101)\n    at Parser.parseObjPropValue (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13129:100)\n    at Parser.parsePropertyDefinition (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13046:10)\n    at Parser.parseObjectLike (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12937:21)\n    at Parser.parseExprAtom (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12343:23)\n    at Parser.parseExprSubscripts (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11999:23)\n    at Parser.parseUpdate (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11979:21)\n    at Parser.parseMaybeUnary (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11954:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11751:61)\n    at Parser.parseExprOps (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11758:23)\n    at Parser.parseMaybeConditional (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11728:23)\n    at Parser.parseMaybeAssign (C:\\Users\\luigi\\Documents\\Boolean\\laravel\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11688:21)");
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/partials/Footer.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/partials/Footer.vue?vue&type=script&lang=js& ***!
@@ -2728,11 +2739,21 @@ var render = function () {
             [
               _vm._l(_vm.posts, function (post) {
                 return _c("article", { key: "post" + post.id }, [
-                  _c("h2", [
-                    _c("a", { attrs: { href: "" } }, [
-                      _vm._v(_vm._s(_vm.truncatesTextAt(post.title, 20))),
-                    ]),
-                  ]),
+                  _c(
+                    "h2",
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          attrs: {
+                            to: { name: "detail", params: { slug: post.slug } },
+                          },
+                        },
+                        [_vm._v(_vm._s(_vm.truncatesTextAt(post.title, 20)))]
+                      ),
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   post.category
                     ? _c("p", [_vm._v(_vm._s(post.category.name))])
@@ -2928,6 +2949,47 @@ var staticRenderFns = [
     ])
   },
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/PostDetail.vue?vue&type=template&id=5ccc70a7&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/PostDetail.vue?vue&type=template&id=5ccc70a7& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "main",
+    { staticClass: "container" },
+    [
+      _vm.post
+        ? _c("div", [
+            _c("h1", [_vm._v("Titolo")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi!"
+              ),
+            ]),
+          ])
+        : _c("Loading"),
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -18259,6 +18321,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/PostDetail.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/pages/PostDetail.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PostDetail_vue_vue_type_template_id_5ccc70a7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostDetail.vue?vue&type=template&id=5ccc70a7& */ "./resources/js/components/pages/PostDetail.vue?vue&type=template&id=5ccc70a7&");
+/* harmony import */ var _PostDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostDetail.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/PostDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PostDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PostDetail_vue_vue_type_template_id_5ccc70a7___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PostDetail_vue_vue_type_template_id_5ccc70a7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/pages/PostDetail.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/PostDetail.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/pages/PostDetail.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PostDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./PostDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/PostDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PostDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/PostDetail.vue?vue&type=template&id=5ccc70a7&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/pages/PostDetail.vue?vue&type=template&id=5ccc70a7& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostDetail_vue_vue_type_template_id_5ccc70a7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./PostDetail.vue?vue&type=template&id=5ccc70a7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/PostDetail.vue?vue&type=template&id=5ccc70a7&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostDetail_vue_vue_type_template_id_5ccc70a7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostDetail_vue_vue_type_template_id_5ccc70a7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/partials/Footer.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/components/partials/Footer.vue ***!
@@ -18438,6 +18569,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Posts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Posts */ "./resources/js/components/Posts.vue");
 /* harmony import */ var _components_pages_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/About */ "./resources/js/components/pages/About.vue");
 /* harmony import */ var _components_pages_Contacts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/Contacts */ "./resources/js/components/pages/Contacts.vue");
+/* harmony import */ var _components_pages_PostDetail__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/PostDetail */ "./resources/js/components/pages/PostDetail.vue");
+
 
 
 
@@ -18464,6 +18597,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/contatti',
     name: 'contacts',
     component: _components_pages_Contacts__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }, {
+    path: '/detail/:slug',
+    name: 'detail',
+    component: _components_pages_PostDetail__WEBPACK_IMPORTED_MODULE_6__["default"]
   }]
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);

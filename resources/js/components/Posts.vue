@@ -6,7 +6,7 @@
             v-for="post in posts"
             :key="`post${post.id}`"
          >
-            <h2><a href="">{{ truncatesTextAt(post.title, 20) }}</a></h2>
+            <h2><router-link :to="{ name: 'detail', params: { slug: post.slug } }">{{ truncatesTextAt(post.title, 20) }}</router-link></h2>
             <p v-if="post.category">{{ post.category.name }}</p>
             <div class="tags">
                <span 
