@@ -5,6 +5,7 @@ import Posts from './components/Posts';
 import About from './components/pages/About';
 import Contacts from './components/pages/Contacts';
 import PostDetail from './components/pages/PostDetail';
+import Error404 from './components/pages/Error404';
 
 Vue.use(VueRouter);
 
@@ -37,6 +38,11 @@ const router = new VueRouter({
          path: '/detail/:slug',
          name: 'detail',
          component: PostDetail,
+      },
+      {
+         path: '/*',
+         name: 'error',
+         component: Error404,
       },
    ],
 });
