@@ -1,10 +1,10 @@
 <template>
    <header>
       <ul>
-         <li><a href="">Home</a></li>
+         <li><router-link :to="{ name: 'home' }">Home</router-link></li>
          <li><a class="active" href="">Blog</a></li>
-         <li><a href="">Chi Siamo</a></li>
-         <li><a href="">Contatti</a></li>
+         <li><router-link :to="{ name: 'about' }">Chi Siamo</router-link></li>
+         <li><router-link :to="{ name: 'contacts' }">Contatti</router-link></li>
       </ul>
    </header>
 </template>
