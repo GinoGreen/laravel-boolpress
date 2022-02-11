@@ -2149,6 +2149,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PostDetail',
@@ -2165,7 +2173,13 @@ __webpack_require__.r(__webpack_exports__);
     this.getPost();
   },
   methods: {
-    getPost: function getPost() {}
+    getPost: function getPost() {
+      var _this = this;
+
+      axios.get(this.apiUrl + this.$route.params.slug).then(function (response) {
+        _this.post = response.data;
+      });
+    }
   }
 });
 
@@ -3007,13 +3021,24 @@ var render = function () {
     [
       _vm.post
         ? _c("div", [
-            _c("h1", [_vm._v("Titolo")]),
+            _c("h1", [_vm._v(_vm._s(_vm.post.title))]),
             _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi!"
-              ),
-            ]),
+            _vm.post.category
+              ? _c("h4", [_vm._v(_vm._s(_vm.post.category.name))])
+              : _vm._e(),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "tags" },
+              _vm._l(_vm.post.tags, function (tag, index) {
+                return _c("span", { key: index, staticClass: "tag" }, [
+                  _vm._v(_vm._s(tag.name)),
+                ])
+              }),
+              0
+            ),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.post.content))]),
           ])
         : _c("Loading"),
     ],

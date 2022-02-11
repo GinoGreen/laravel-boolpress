@@ -1,8 +1,16 @@
 <template>
    <main class="container">
       <div v-if="post">
-         <h1>Titolo</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi!</p>
+         <h1>{{ post.title }}</h1>
+         <h4 v-if="post.category">{{ post.category.name }}</h4>
+         <div class="tags">
+            <span 
+               v-for="(tag, index) in post.tags"
+               :key="index"
+               class="tag"
+            >{{ tag.name }}</span>
+         </div>
+         <p>{{ post.content }}</p>
       </div>
       <Loading v-else />
    </main>
@@ -24,7 +32,10 @@ export default {
    },
    methods: {
       getPost() {
-          
+         axios.get(this.apiUrl + this.$route.params.slug)
+            .then(response => {
+               this.post = response.data;
+            });
       }
    }
 }
