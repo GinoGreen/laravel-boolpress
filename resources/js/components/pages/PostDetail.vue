@@ -20,10 +20,12 @@ export default {
       }
    },
    mounted() {
-      
+      this.getPost();
    },
    methods: {
-      getPost()
+      getPost() {
+          
+      }
    }
 }
 </script>
