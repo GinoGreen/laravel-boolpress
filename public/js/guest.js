@@ -2185,6 +2185,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PostDetail',
@@ -3096,23 +3101,33 @@ var render = function () {
     { staticClass: "container" },
     [
       _vm.post
-        ? _c("div", [
+        ? _c("div", { staticClass: "post" }, [
             _c("h1", [_vm._v(_vm._s(_vm.post.title))]),
             _vm._v(" "),
             _vm.post.category
-              ? _c("h4", [_vm._v(_vm._s(_vm.post.category.name))])
+              ? _c("h4", { staticClass: "category" }, [
+                  _c("span", [_vm._v(_vm._s(_vm.post.category.name))]),
+                ])
               : _vm._e(),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "tags" },
-              _vm._l(_vm.post.tags, function (tag, index) {
-                return _c("span", { key: index, staticClass: "tag" }, [
-                  _vm._v(_vm._s(tag.name)),
-                ])
+            _vm.post.tags
+              ? _c(
+                  "div",
+                  { staticClass: "tags" },
+                  _vm._l(_vm.post.tags, function (tag, index) {
+                    return _c("span", { key: index, staticClass: "tag" }, [
+                      _vm._v(_vm._s(tag.name)),
+                    ])
+                  }),
+                  0
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _c("div", { staticClass: "img-box" }, [
+              _c("img", {
+                attrs: { src: _vm.post.cover, alt: _vm.post.title },
               }),
-              0
-            ),
+            ]),
             _vm._v(" "),
             _c("p", [_vm._v(_vm._s(_vm.post.content))]),
           ])

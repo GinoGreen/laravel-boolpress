@@ -51,6 +51,12 @@ body {
   margin-right: 7px;
 }
 
+.category span {
+  color: #23272E;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
 header {
   background-color: white;
 }
@@ -125,6 +131,10 @@ header ul li a.active {
 
 .blog article .text-box .tag {
   font-size: 0.8em;
+}
+
+.post img {
+  width: 80%;
 }
 
 footer {

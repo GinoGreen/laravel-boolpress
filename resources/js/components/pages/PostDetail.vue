@@ -1,14 +1,19 @@
 <template>
    <main class="container">
-      <div v-if="post">
+      <div class="post" v-if="post">
          <h1>{{ post.title }}</h1>
-         <h4 v-if="post.category">{{ post.category.name }}</h4>
-         <div class="tags">
+         <h4 class="category" v-if="post.category">
+            <span>{{ post.category.name }}</span>
+         </h4>
+         <div v-if="post.tags" class="tags">
             <span 
                v-for="(tag, index) in post.tags"
                :key="index"
                class="tag"
             >{{ tag.name }}</span>
+         </div>
+         <div class="img-box">
+            <img :src="post.cover" :alt="post.title">
          </div>
          <p>{{ post.content }}</p>
       </div>
