@@ -14,8 +14,8 @@ class AddCoverPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->text('cover')->nullable();
-            $table->string('cover_original_name');
+            $table->text('cover')->nullable()->after('slug');
+            $table->string('cover_original_name')->nullable()->after('cover');
         });
     }
 

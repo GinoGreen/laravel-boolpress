@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PostPostRequest;
 use App\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -45,13 +46,23 @@ class PostController extends Controller
     {
         $data = $request->all();
         $new_post = new Post();
+
+        if (array_key_exists('cover', $data)) {
+
+            $data['cover_original_name'] = $request->file('cover')->getClientOriginalName();
+            $img_path = Storage::put('upload', $data['cover']);
+            $data['cover'] = $img_path;
+        }
+        
         $new_post->fill($data);
         $new_post->slug = Post::generateUniqueSlug($new_post->title);
+        
         $new_post->save();
-
+        
         if (array_key_exists('tags', $data)) {
             $new_post->tags()->attach($data['tags']);
         }
+
         return redirect()->route('admin.post.show', $new_post);
     }
 
@@ -122,5 +133,9 @@ class PostController extends Controller
     {
         $post->delete();
         return redirect()->route('admin.post.index')->with('deleted', "Il post << $post->title >> é stato elimiato");
+    }
+
+    private function getImgPath($cover) {
+
     }
 }

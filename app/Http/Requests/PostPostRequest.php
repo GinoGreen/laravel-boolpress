@@ -39,7 +39,7 @@ class PostPostRequest extends FormRequest
             'content.required' => 'Il contenuto é obbligatorio',
             'content.min' => 'Inserire almeno :min caratteri',
             'cover.image' => 'Puoi inserire solo immagini',
-            'cover.size' => 'L\'immagine supera i :size Kb',
+            'cover.max' => 'L\'immagine supera i :size Kb',
         ];
     }
 }
