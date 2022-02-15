@@ -12,6 +12,14 @@ class PostController extends Controller
 
         $posts = Post::with(['category', 'tags'])->paginate(3);
 
+        $posts->each(function($post) {
+            if ($post->cover) {
+                $post->cover = url('storage/' . $post->cover);
+            } else {
+                $post->cover = url('img/img-placeholder.png');
+            }
+        });
+
         return response()->json($posts);
     }
 

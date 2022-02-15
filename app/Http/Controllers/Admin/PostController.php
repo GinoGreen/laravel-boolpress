@@ -154,7 +154,4 @@ class PostController extends Controller
         return redirect()->route('admin.post.index')->with('deleted', "Il post << $post->title >> é stato elimiato");
     }
 
-    private function getImgPath($cover) {
-        //TODO
-    }
 }
