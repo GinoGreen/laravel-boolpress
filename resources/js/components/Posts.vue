@@ -6,17 +6,22 @@
             v-for="post in posts"
             :key="`post${post.id}`"
          >
-            <h2><router-link :to="{ name: 'detail', params: { slug: post.slug } }">{{ truncatesTextAt(post.title, 20) }}</router-link></h2>
-            <p v-if="post.category">{{ post.category.name }}</p>
-            <div class="tags">
-               <span 
-                  v-for="(tag, index) in post.tags"
-                  :key="index"
-                  class="tag"
-               >{{ tag.name }}</span>
+            <div class="img-box">
+               <img :src="post.cover" alt="">
             </div>
-            <span class="date">{{ getDatePost(post.created_at) }}</span>
-            <p>{{ truncatesTextAt(post.content, 50) }}</p>
+            <div class="text-box">
+               <h2><router-link :to="{ name: 'detail', params: { slug: post.slug } }">{{ truncatesTextAt(post.title, 20) }}</router-link></h2>
+               <p v-if="post.category">{{ post.category.name }}</p>
+               <div class="tags">
+                  <span 
+                     v-for="(tag, index) in post.tags"
+                     :key="index"
+                     class="tag"
+                  >{{ tag.name }}</span>
+               </div>
+               <span class="date">{{ getDatePost(post.created_at) }}</span>
+               <p>{{ truncatesTextAt(post.content, 50) }}</p>
+            </div>
          </article>
 
          <div class="navigation">

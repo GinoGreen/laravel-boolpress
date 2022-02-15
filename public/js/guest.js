@@ -2015,6 +2015,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Posts',
@@ -2805,43 +2810,52 @@ var render = function () {
             [
               _vm._l(_vm.posts, function (post) {
                 return _c("article", { key: "post" + post.id }, [
-                  _c(
-                    "h2",
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          attrs: {
-                            to: { name: "detail", params: { slug: post.slug } },
-                          },
-                        },
-                        [_vm._v(_vm._s(_vm.truncatesTextAt(post.title, 20)))]
-                      ),
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  post.category
-                    ? _c("p", [_vm._v(_vm._s(post.category.name))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "tags" },
-                    _vm._l(post.tags, function (tag, index) {
-                      return _c("span", { key: index, staticClass: "tag" }, [
-                        _vm._v(_vm._s(tag.name)),
-                      ])
-                    }),
-                    0
-                  ),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "date" }, [
-                    _vm._v(_vm._s(_vm.getDatePost(post.created_at))),
+                  _c("div", { staticClass: "img-box" }, [
+                    _c("img", { attrs: { src: post.cover, alt: "" } }),
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(_vm._s(_vm.truncatesTextAt(post.content, 50))),
+                  _c("div", { staticClass: "text-box" }, [
+                    _c(
+                      "h2",
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            attrs: {
+                              to: {
+                                name: "detail",
+                                params: { slug: post.slug },
+                              },
+                            },
+                          },
+                          [_vm._v(_vm._s(_vm.truncatesTextAt(post.title, 20)))]
+                        ),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    post.category
+                      ? _c("p", [_vm._v(_vm._s(post.category.name))])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tags" },
+                      _vm._l(post.tags, function (tag, index) {
+                        return _c("span", { key: index, staticClass: "tag" }, [
+                          _vm._v(_vm._s(tag.name)),
+                        ])
+                      }),
+                      0
+                    ),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "date" }, [
+                      _vm._v(_vm._s(_vm.getDatePost(post.created_at))),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(_vm._s(_vm.truncatesTextAt(post.content, 50))),
+                    ]),
                   ]),
                 ])
               }),
