@@ -11,7 +11,7 @@
       </div>
       @endif
       <h1>Modifica Post</h1>
-      <form action="{{ route('admin.post.update', $post) }}" method="POST">
+      <form action="{{ route('admin.post.update', $post) }}" method="POST" enctype="multipart/form-data">
          @csrf
          @method('PUT')
          <div class="mb-3">
@@ -30,6 +30,30 @@
             >
             @error('title')   
                <p class="@error('title')
+                  invalid-feedback
+               @enderror">{{ $message }}</p>
+            @enderror
+         </div>
+         <div class="mb-3">
+            @if ($post->cover)
+               <div>
+                  <img width="250px" src="{{ asset('storage/' . $post->cover) }}" alt="{{ $post->cover_original_name }}">
+               </div>
+            @endif
+            <label class="form-check-label" for="cover">Immagine</label>
+            <input 
+               type="file" 
+               placeholder="Inserisci il titolo del post"
+               id="cover"
+               name="cover"
+               class="form-control
+                  @error('cover')
+                     is-invalid
+                  @enderror
+               "
+            >
+            @error('cover')   
+               <p class="@error('cover')
                   invalid-feedback
                @enderror">{{ $message }}</p>
             @enderror

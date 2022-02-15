@@ -109,9 +109,22 @@ class PostController extends Controller
     public function update(PostPostRequest $request, Post $post)
     {
         $form_data = $request->all();
+
         if ($form_data['title'] != $post->title) {
             $form_data['slug'] = Post::generateUniqueSlug($form_data['title']);
         }
+
+        if (array_key_exists('cover', $form_data)) {
+            
+            if ($post->cover) {
+                Storage::delete($post->cover);
+            }
+
+            $form_data['cover_original_name'] = $request->file('cover')->getClientOriginalName();
+            $img_path = Storage::put('upload', $form_data['cover']);
+            $form_data['cover'] = $img_path;
+        }
+
         $post->update($form_data);
         
         if (array_key_exists('tags', $form_data)) {
