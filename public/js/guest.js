@@ -2020,6 +2020,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Posts',
@@ -2032,7 +2034,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       apiUrl: 'http://127.0.0.1:8000/api/posts?page=',
-      posts: [],
+      posts: null,
       pagination: {}
     };
   },
@@ -2811,7 +2813,7 @@ var render = function () {
               _vm._l(_vm.posts, function (post) {
                 return _c("article", { key: "post" + post.id }, [
                   _c("div", { staticClass: "img-box" }, [
-                    _c("img", { attrs: { src: post.cover, alt: "" } }),
+                    _c("img", { attrs: { src: post.cover, alt: post.title } }),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "text-box" }, [
@@ -2835,19 +2837,25 @@ var render = function () {
                     ),
                     _vm._v(" "),
                     post.category
-                      ? _c("p", [_vm._v(_vm._s(post.category.name))])
+                      ? _c("div", { staticClass: "category" }, [
+                          _c("span", [_vm._v(_vm._s(post.category.name))]),
+                        ])
                       : _vm._e(),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tags" },
-                      _vm._l(post.tags, function (tag, index) {
-                        return _c("span", { key: index, staticClass: "tag" }, [
-                          _vm._v(_vm._s(tag.name)),
-                        ])
-                      }),
-                      0
-                    ),
+                    post.tags
+                      ? _c(
+                          "div",
+                          { staticClass: "tags" },
+                          _vm._l(post.tags, function (tag, index) {
+                            return _c(
+                              "span",
+                              { key: index, staticClass: "tag" },
+                              [_vm._v(_vm._s(tag.name))]
+                            )
+                          }),
+                          0
+                        )
+                      : _vm._e(),
                     _vm._v(" "),
                     _c("span", { staticClass: "date" }, [
                       _vm._v(_vm._s(_vm.getDatePost(post.created_at))),

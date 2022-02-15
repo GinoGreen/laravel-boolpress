@@ -7,12 +7,14 @@
             :key="`post${post.id}`"
          >
             <div class="img-box">
-               <img :src="post.cover" alt="">
+               <img :src="post.cover" :alt="post.title">
             </div>
             <div class="text-box">
                <h2><router-link :to="{ name: 'detail', params: { slug: post.slug } }">{{ truncatesTextAt(post.title, 20) }}</router-link></h2>
-               <p v-if="post.category">{{ post.category.name }}</p>
-               <div class="tags">
+               <div v-if="post.category" class="category">
+                  <span>{{ post.category.name }}</span>
+               </div>
+               <div v-if="post.tags" class="tags">
                   <span 
                      v-for="(tag, index) in post.tags"
                      :key="index"
@@ -65,7 +67,7 @@ export default {
    data() {
       return {
          apiUrl: 'http://127.0.0.1:8000/api/posts?page=',
-         posts: [],
+         posts: null,
          pagination: {},
       }
    },

@@ -13,11 +13,7 @@ class PostController extends Controller
         $posts = Post::with(['category', 'tags'])->paginate(3);
 
         $posts->each(function($post) {
-            if ($post->cover) {
-                $post->cover = url('storage/' . $post->cover);
-            } else {
-                $post->cover = url('img/img-placeholder.png');
-            }
+            $post->cover = $this->getImgPath($post->cover);
         });
 
         return response()->json($posts);
@@ -34,6 +30,17 @@ class PostController extends Controller
             ];
         }
 
+        $post->cover = $this->getImgPath($post->cover);
+
         return response()->json($post);
+    }
+
+    public function getImgPath($cover) {
+        if ($cover) {
+            $cover = url('storage/' . $cover);
+        } else {
+            $cover = url('img/img-placeholder.png');
+        }
+        return $cover;
     }
 }

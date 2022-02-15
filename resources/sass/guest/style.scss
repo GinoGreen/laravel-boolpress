@@ -84,8 +84,19 @@ header {
                   text-decoration: underline;
                }
             }
+            .category {
+
+               span {
+                  color: #23272E;
+                  background-color: #fff;
+                  border-radius: 6px;
+               }
+            }
             .date {
                font-size: .6em;
+            }
+            .tag {
+               font-size: .8em;
             }
          }
       }

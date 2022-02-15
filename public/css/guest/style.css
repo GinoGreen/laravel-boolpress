@@ -113,8 +113,18 @@ header ul li a.active {
   text-decoration: underline;
 }
 
+.blog article .text-box .category span {
+  color: #23272E;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
 .blog article .text-box .date {
   font-size: 0.6em;
+}
+
+.blog article .text-box .tag {
+  font-size: 0.8em;
 }
 
 footer {
