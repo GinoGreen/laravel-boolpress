@@ -11,7 +11,7 @@
       </div>
       @endif
       <h1>Crea Post</h1>
-      <form action="{{ route('admin.post.store') }}" method="POST">
+      <form action="{{ route('admin.post.store') }}" method="POST" enctype="multipart/form-data">
          @csrf
          @method('POST')
          <div class="mb-3">
@@ -30,6 +30,25 @@
             >
             @error('title')   
                <p class="@error('title')
+                  invalid-feedback
+               @enderror">{{ $message }}</p>
+            @enderror
+         </div>
+         <div class="mb-3">
+            <label class="form-check-label" for="cover">Immagine</label>
+            <input 
+               type="file" 
+               placeholder="Inserisci il titolo del post"
+               id="cover"
+               name="cover"
+               class="form-control
+                  @error('cover')
+                     is-invalid
+                  @enderror
+               "
+            >
+            @error('cover')   
+               <p class="@error('cover')
                   invalid-feedback
                @enderror">{{ $message }}</p>
             @enderror

@@ -26,6 +26,7 @@ class PostPostRequest extends FormRequest
         return [
             'title' => 'required|max:255|min:2',
             'content' => 'required|min:5',
+            'cover' => 'nullable|image|max:32000'
         ];
     }
 
@@ -37,6 +38,8 @@ class PostPostRequest extends FormRequest
             'title.min' => 'Il titolo deve contenere almeno :min caratteri',
             'content.required' => 'Il contenuto é obbligatorio',
             'content.min' => 'Inserire almeno :min caratteri',
+            'cover.image' => 'Puoi inserire solo immagini',
+            'cover.size' => 'L\'immagine supera i :size Kb',
         ];
     }
 }
