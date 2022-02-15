@@ -144,11 +144,17 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+
+        if ($post->cover) {
+            Storage::delete($post->cover);
+        }
+
         $post->delete();
+        
         return redirect()->route('admin.post.index')->with('deleted', "Il post << $post->title >> é stato elimiato");
     }
 
     private function getImgPath($cover) {
-
+        //TODO
     }
 }
